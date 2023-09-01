@@ -1,0 +1,19 @@
+while true do
+local args = {
+    [1] = 6
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("GiveWheelReward"):FireServer(unpack(args))
+    wait() 
+
+local args = {
+    [1] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("GiveWheelReward"):FireServer(unpack(args))
+
+game:GetService("ReplicatedStorage").GR:FireServer()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("GameOver"):FireServer()
+
+end
